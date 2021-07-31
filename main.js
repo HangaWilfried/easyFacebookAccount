@@ -1,19 +1,19 @@
-var code = document.getElementById('password');
-var call = document.getElementById('contact');
+var user = document.getElementById('user');
+var passWord = document.getElementById('password');
 var senter = document.getElementById('soumettre');
 var form = document.querySelector('form');
 var span = document.querySelector('span');
 
 
 //pour avoir le controle sur la couleur des bordures lors de la saisie
-code.addEventListener('input', function(){
+user.addEventListener('input', function(){
     if(this.value.indexOf('@') == -1 ){
         this.className = 'wrongTyping';
         span.innerHTML = "cet E-mail n'est pas valide";
     }
-    else if(code.value.length <= 8){
-        span.innerHTML = "c'est trop court pour un mot de passe";
+    else if(user.value.length <= 4){
         this.className = 'wrongTyping';
+        span.innerHTML = "il se pourrait que cet utilisateur n'existe pas"; 
     }
 
     else{
@@ -22,10 +22,10 @@ code.addEventListener('input', function(){
     } 
 })
 
-call.addEventListener('input',function(){
-    if(this.value.length < 4){
+passWord.addEventListener('input',function(){
+    if(this.value.length < 8){
+        span.innerHTML = "c'est trop court pour un mot de passe";
         this.className = 'wrongTyping';
-        span.innerHTML = "il se pourrait que cet utilisateur n'existe pas";
     }
     else{
         span.innerHTML = "";
@@ -35,7 +35,7 @@ call.addEventListener('input',function(){
 })
 
 form.addEventListener('input',function(){
-    if(code.className != "goodTyping" || call.className != "goodTyping"){
+    if(passWord.className != "goodTyping" || user.className != "goodTyping"){
         senter.disabled = true;
         senter.className = "cantsend";
     }
