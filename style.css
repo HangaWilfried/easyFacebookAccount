@@ -1,0 +1,244 @@
+*{
+  font-family: Arial;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(225, 241, 236);
+}
+#cadre{
+box-sizing: content-box;
+margin: 10%;
+display: block;
+justify-content: space-between;
+padding: 0;
+}
+#cadre div{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#cadre div h1{
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+font-size: 60px;
+color: rgb(50, 50, 233);
+margin-bottom: 5px;
+text-align: center;
+}
+#cadre div .concept{
+font-size: 20px;
+color: rgb(106, 107, 106);
+font-family: Cambria;
+text-align: center;
+}
+
+#cadre div form{
+border: 1px solid #ccc;
+box-sizing: border-box;
+border-radius: 5px;
+padding: 10px 15px 20px 10px;
+background-color: #fff;
+box-shadow: 1px 1px 100px gray;
+text-align: center;
+width: 100%;
+}
+
+#cadre div form input{
+width: 100%;
+height: 40px;
+display: block;
+margin: 10px 0 30px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+outline: none;
+text-indent: 10px;
+}
+
+#cadre div form input::placeholder{
+color: #abc;
+opacity: 1;
+}
+
+#cadre div form #soumettre.cansend{
+  color: #fff;
+  font-size: 15px;
+  margin: 10px 2px 40px 2px;
+  width: 100%;
+  background-color: rgb(50, 50, 233);
+  border: 1px solid rgb(50, 50, 233);
+}
+#cadre div form #soumettre.cantsend{
+  background-color: #fff;
+  color: rgb(129, 129, 134);
+  border: 1px solid rgb(110, 114, 113);
+}
+
+#cadre div form p a{
+display: block;
+margin-bottom: 20px;
+margin-top: -15px;
+color: rgb(50, 50, 233);
+text-decoration: none;
+}
+#cadre div form p{
+border-bottom: 1px solid #ccc;
+}
+
+#cadre div form #creer{
+padding: 12px 10px;
+width: 60%;
+margin: auto;
+color: #fff;
+background-color: rgb(71, 243, 71);
+border: 1px solid rgb(71, 243, 71);
+}
+
+#cadre div form #creer:hover{
+background-color: rgb(34, 139, 34);
+border: 1px solid rgb(34, 139, 34);
+font-size: 14px;
+}
+
+#cadre div .instruction{
+text-align: center;
+margin-top: 30px;
+}
+
+span{
+  color: red;
+  text-shadow: 1px 1px 3px solid red;
+  font-size: 10px;
+  position: relative;
+  top: 10px;
+}
+
+
+/*media query*/
+
+@media only screen and (min-width: 892px) {
+  *{
+    font-family: Arial;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(225, 241, 236);
+  }
+  #cadre{
+    box-sizing: content-box;
+    margin: 100px 0;
+    display: flex;
+    padding: 20px 30px;
+  }
+
+
+  #cadre div h1{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5em;
+    color: rgb(50, 50, 233);
+    margin-bottom: 5px;
+  }
+  #cadre div .concept{
+    width: 400px;
+    font-size: 30px;
+    color: rgb(39, 36, 36);
+    font-family: cursive;
+  }
+
+  #cadre div form{
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 20px 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 100px gray;
+    text-align: center;
+    width: 400px;
+  }
+  #cadre div form input{
+    width: 350px;
+    height: 40px;
+    display: block;
+    margin: 20px 0;
+   border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 10px;
+  }
+
+  #cadre div form input::placeholder{
+    color: #abc;
+    opacity: 1;
+  }
+
+
+  #cadre div form #soumettre.cansend{
+    color: #fff;
+    font-size: 15px;
+    width: 355px;
+    background-color: rgb(50, 50, 233);
+    border: 1px solid rgb(50, 50, 233);
+  }
+  #cadre div form #soumettre.cantsend{
+    background-color: #fff;
+    color: rgb(129, 129, 134);
+    border: 1px solid rgb(110, 114, 113);
+  }
+
+  #cadre div form p a{
+    display: block;
+    margin-bottom: 20px;
+    color: rgb(50, 50, 233);
+    text-decoration: none;
+  }
+  #cadre div form p{
+    border-bottom: 1px solid #ccc;
+  }
+
+  #cadre div form #creer{
+    padding: 12px 10px;
+    width: 200px;
+    margin: auto;
+    color: #fff;
+    background-color: rgb(71, 243, 71);
+    border: 1px solid rgb(71, 243, 71);
+  }
+
+  #cadre div form #creer:hover{
+    background-color: rgb(34, 139, 34);
+    border: 1px solid rgb(34, 139, 34);
+    font-size: 14px;
+  }
+
+  #cadre div .instruction{
+    width: 400px;
+    text-align: center;
+  }
+  span{
+    color: red;
+    text-shadow: 1px 1px 3px solid red;
+    font-size: 10px;
+    position: relative;
+    top: 15px;
+  }
+  
+}
+
+.goodTyping{
+  border: 1px solid blue;
+  box-shadow: 1px 1px 3px blue;
+  border-radius: 5px;
+  color: blue;
+}
+
+.wrongTyping{
+  border: 1px solid red;
+  box-shadow: 1px 1px 3px red;
+  border-radius: 5px;
+  color: red;
+}
+
+
+ 
