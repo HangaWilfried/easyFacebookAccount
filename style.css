@@ -1,5 +1,8 @@
-*{
-  font-family: Arial;
+@font-face{
+  font-family: 'Poppins','Allura';
+  src: url("fonts/Poppins-Black.otf") format('opentype'),url("./fonts/Allura-Regulator.otf") format("opentype");
+  font-size: 22px;
+  font-weight: 400px;
 }
 body{
   padding: 0;
@@ -19,17 +22,17 @@ padding: 0;
 }
 
 #cadre div h1{
-font-weight: bold;
+/*font-weight: bold;
 font-family: 'Times New Roman', Times, serif;
-font-size: 60px;
+font-size: 60px*/
 color: rgb(50, 50, 233);
 margin-bottom: 5px;
 text-align: center;
 }
 #cadre div .concept{
-font-size: 20px;
+/*font-size: 20px;*/
 color: rgb(106, 107, 106);
-font-family: Cambria;
+/*font-family: Cambria;*/
 text-align: center;
 }
 
@@ -62,7 +65,7 @@ opacity: 1;
 
 #cadre div form #soumettre.cansend{
   color: #fff;
-  font-size: 15px;
+  /*font-size: 15px;*/
   margin: 10px 2px 40px 2px;
   width: 100%;
   background-color: rgb(50, 50, 233);
@@ -97,7 +100,7 @@ border: 1px solid rgb(71, 243, 71);
 #cadre div form #creer:hover{
 background-color: rgb(34, 139, 34);
 border: 1px solid rgb(34, 139, 34);
-font-size: 14px;
+/*font-size: 14px;*/
 }
 
 #cadre div .instruction{
@@ -117,13 +120,20 @@ span{
 /*media query*/
 
 @media only screen and (min-width: 892px) {
-  *{
-    font-family: Arial;
-  }
+  /**{
+    *font-family: Arial;
+  }*/
+
   body{
     padding: 0;
     margin: 0;
     background-color: rgb(225, 241, 236);
+  }
+  @font-face {
+    font-family: 'Poppins','Allura';
+    src: url("fonts/Poppins-Black.otf") format('opentype'),url("./fonts/Allura-Regulator.otf") format("opentype");
+    font-size: 30px;
+    font-weight: 400px;
   }
   #cadre{
     box-sizing: content-box;
@@ -135,16 +145,13 @@ span{
 
   #cadre div h1{
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 5em;
     color: rgb(50, 50, 233);
     margin-bottom: 5px;
   }
   #cadre div .concept{
     width: 400px;
-    font-size: 30px;
     color: rgb(39, 36, 36);
-    font-family: cursive;
   }
 
   #cadre div form{
@@ -219,11 +226,10 @@ span{
   span{
     color: red;
     text-shadow: 1px 1px 3px solid red;
-    font-size: 10px;
     position: relative;
     top: 15px;
   }
-  
+
 }
 
 .goodTyping{
@@ -239,6 +245,3 @@ span{
   border-radius: 5px;
   color: red;
 }
-
-
- 
