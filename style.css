@@ -1,8 +1,18 @@
 @font-face{
-  font-family: 'Poppins','Allura';
-  src: url("fonts/Poppins-Black.otf") format('opentype'),url("./fonts/Allura-Regulator.otf") format("opentype");
-  font-size: 22px;
-  font-weight: 400px;
+  font-family: 'poppinsbolder';
+  src: url("fonts/Poppins-Black.otf") format('opentype');
+}
+@font-face{
+  font-family: 'poppinsbold'
+  src: url("fonts/Poppins-ExtraLight.otf") format('opentype');
+}
+@font-face{
+  font-family: 'poppinsnormal';
+  src: url("fonts/Poppins-Thin.otf") format('opentype');
+}
+@font-face{
+  font-family: 'Allura'
+  src: url("fonts/Allura-Regular.otf") format('opentype');
 }
 body{
   padding: 0;
@@ -15,6 +25,7 @@ margin: 10%;
 display: block;
 justify-content: space-between;
 padding: 0;
+font-family: 'poppinsnormal';
 }
 #cadre div{
   margin-top: 10px;
@@ -22,18 +33,17 @@ padding: 0;
 }
 
 #cadre div h1{
-/*font-weight: bold;
-font-family: 'Times New Roman', Times, serif;
-font-size: 60px*/
 color: rgb(50, 50, 233);
 margin-bottom: 5px;
 text-align: center;
+font-family: 'poppinsbolder'!important;
+font-size: 30px;
 }
 #cadre div .concept{
-/*font-size: 20px;*/
-color: rgb(106, 107, 106);
-/*font-family: Cambria;*/
+color: rgb(39, 36, 36);
 text-align: center;
+font-size: 18px;
+font-family: 'poppinsbold';
 }
 
 #cadre div form{
@@ -56,16 +66,20 @@ border: 1px solid #ccc;
 border-radius: 5px;
 outline: none;
 text-indent: 10px;
+font-family: 'poppinsbolder';
+font-size: 16px;
 }
 
 #cadre div form input::placeholder{
 color: #abc;
 opacity: 1;
+font-family: 'Allura';
+font-size: 23px;
+overflow-x: hidden;
 }
 
 #cadre div form #soumettre.cansend{
   color: #fff;
-  /*font-size: 15px;*/
   margin: 10px 2px 40px 2px;
   width: 100%;
   background-color: rgb(50, 50, 233);
@@ -83,13 +97,17 @@ margin-bottom: 20px;
 margin-top: -15px;
 color: rgb(50, 50, 233);
 text-decoration: none;
+font-family: 'poppinsbold';
 }
 #cadre div form p{
 border-bottom: 1px solid #ccc;
 }
 
 #cadre div form #creer{
-padding: 12px 10px;
+padding-left: 6px;
+padding-right: 6px;
+padding-top: 5px;
+padding-bottom: 5px;
 width: 60%;
 margin: auto;
 color: #fff;
@@ -100,12 +118,16 @@ border: 1px solid rgb(71, 243, 71);
 #cadre div form #creer:hover{
 background-color: rgb(34, 139, 34);
 border: 1px solid rgb(34, 139, 34);
-/*font-size: 14px;*/
 }
 
 #cadre div .instruction{
 text-align: center;
 margin-top: 30px;
+font-family: 'poppinsbold';
+}
+#cadre div .instruction strong{
+  font-size: 22px;
+  color: #000;
 }
 
 span{
@@ -120,20 +142,26 @@ span{
 /*media query*/
 
 @media only screen and (min-width: 892px) {
-  /**{
-    *font-family: Arial;
-  }*/
-
+  @font-face{
+    font-family: 'poppinsbolder';
+    src: url("fonts/Poppins-Black.otf") format('opentype');
+  }
+  @font-face{
+    font-family: 'poppinsbold';
+    src: url("fonts/Poppins-ExtraLight.otf") format('opentype');
+  }
+  @font-face{
+    font-family: 'poppinsnormal';
+    src: url("fonts/Poppins-Thin.otf") format('opentype');
+  }
+  @font-face{
+    font-family: 'Allura'
+    src: url("fonts/Allura-Regular.otf") format('opentype');
+  }
   body{
     padding: 0;
     margin: 0;
     background-color: rgb(225, 241, 236);
-  }
-  @font-face {
-    font-family: 'Poppins','Allura';
-    src: url("fonts/Poppins-Black.otf") format('opentype'),url("./fonts/Allura-Regulator.otf") format("opentype");
-    font-size: 30px;
-    font-weight: 400px;
   }
   #cadre{
     box-sizing: content-box;
@@ -144,14 +172,16 @@ span{
 
 
   #cadre div h1{
-    font-weight: bold;
-    font-size: 5em;
+    font-family: 'poppinsbolder';
+    font-size: 60px;
     color: rgb(50, 50, 233);
     margin-bottom: 5px;
   }
   #cadre div .concept{
     width: 400px;
     color: rgb(39, 36, 36);
+    font-family: 'poppinsbold';
+    font-size: 30px;
   }
 
   #cadre div form{
@@ -163,27 +193,33 @@ span{
     box-shadow: 1px 1px 100px gray;
     text-align: center;
     width: 400px;
+    font-family: 'poppinsbolder';
   }
   #cadre div form input{
     width: 350px;
     height: 40px;
     display: block;
     margin: 20px 0;
-   border: 1px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
     text-indent: 10px;
+    font-family: 'poppinsbolder';
+    font-size: 16px;
   }
 
   #cadre div form input::placeholder{
     color: #abc;
     opacity: 1;
+    font-family: 'Allura';
+    font-weight: bold;
+    font-size: 30px;
   }
 
 
   #cadre div form #soumettre.cansend{
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     width: 355px;
     background-color: rgb(50, 50, 233);
     border: 1px solid rgb(50, 50, 233);
@@ -205,12 +241,16 @@ span{
   }
 
   #cadre div form #creer{
-    padding: 12px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 200px;
     margin: auto;
     color: #fff;
     background-color: rgb(71, 243, 71);
     border: 1px solid rgb(71, 243, 71);
+    font-size: 14px;
   }
 
   #cadre div form #creer:hover{
@@ -222,6 +262,12 @@ span{
   #cadre div .instruction{
     width: 400px;
     text-align: center;
+    font-family: 'poppinsbold';
+    font-size: 15px;
+  }
+  #cadre div .instruction strong{
+    font-family: 'poppinsbolder';
+    color: #000;
   }
   span{
     color: red;
@@ -244,4 +290,7 @@ span{
   box-shadow: 1px 1px 3px red;
   border-radius: 5px;
   color: red;
+}
+strong{
+  color: rgb(106, 107, 106);
 }
